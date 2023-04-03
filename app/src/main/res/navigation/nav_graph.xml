@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.androidsocialnetwork.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_usersListFragment"
+            app:destination="@id/usersListFragment"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="com.example.androidsocialnetwork.ui.UsersListFragment"
+        android:label="fragment_users_list"
+        tools:layout="@layout/fragment_users_list" >
+        <action
+            android:id="@+id/action_usersListFragment_to_userFragment"
+            app:destination="@id/userFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.androidsocialnetwork.ui.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" >
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

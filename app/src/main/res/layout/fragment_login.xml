@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/email"
+        android:text="andrei.indosov@gmail.com"
+        android:autofillHints="emailAddress"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:hint="@string/password"
+        android:text="37EhB9B54pcUjUa"
+        android:autofillHints="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/login"/>
+
+    <Button
+        android:id="@+id/authBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/auth"/>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/logout"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/result"/>
+
+    <TextView
+        android:id="@+id/resultAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/result"/>
+
+    <ProgressBar
+        android:id="@+id/login_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
